@@ -1,0 +1,7 @@
+isbns_per_chunk: 5000
+output_type: xlsx
+output_prefix: LINzz.
+fields_containing_isbns:
+        - isbn_t
+        - isbn_of_alternate_edition_t
+write_filenames_to_stdout: true

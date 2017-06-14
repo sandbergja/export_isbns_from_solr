@@ -1,0 +1,11 @@
+output_type: csv
+delimiter: "|"
+output_prefix: ybp_
+fields_containing_isbns:
+        - isbn_t
+        - isbn_of_alternate_edition_t
+non_isbn_solr_fields:
+        - record_source_facet:
+                character_limit: 10
+literal_fields:
+        - account_number: 759099

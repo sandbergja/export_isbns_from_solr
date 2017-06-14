@@ -1,0 +1,5 @@
+output_type: csv
+output_prefix: textbooks_
+fields_containing_isbns:
+        - isbn_t
+        - isbn_of_alternate_edition_t
