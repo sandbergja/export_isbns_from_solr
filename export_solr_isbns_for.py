@@ -53,6 +53,9 @@ if 'exclude_facet_values' in current_style:
         fields_to_fetch.append(list(field.keys())[0])
 
 data_url = 'http://' + solr_hostname + ':' + solr_port + '/solr/' + solr_core + '/select?rows=' + max_rows_to_fetch + '&fl=' + ','.join(fields_to_fetch) + '&wt=csv'
+if 'query' in current_style:
+    data_url = data_url + '&fq=' + current_style['query']
+print(data_url)
 response = urllib.request.urlretrieve(data_url, temp_csv_name)
 
 i = 0

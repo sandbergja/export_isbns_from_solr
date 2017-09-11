@@ -5,3 +5,4 @@ fields_containing_isbns:
         - isbn_t
         - isbn_of_alternate_edition_t
 write_filenames_to_stdout: true
+query: is_electronic_facet:("Albany%20Campus%20Library"+OR+"Healthcare%20Occupations%20Library"+OR+"Online")
